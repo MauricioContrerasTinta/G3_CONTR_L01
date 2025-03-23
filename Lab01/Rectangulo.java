@@ -25,7 +25,12 @@ public class Rectangulo {
     public Coordenada getEsquina2(){
         return esquina2;
     }
-
+    public double calculoArea() {
+        double base = Math.abs(esquina2.getX() - esquina1.getX());
+        double altura = Math.abs(esquina2.getY() - esquina1.getY());
+        return base * altura;
+    }
+    
     @Override
     public String toString(){
         return "[esquina1=" + esquina1 + ", esquina2=" + esquina2 + "]";
