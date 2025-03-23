@@ -1,4 +1,6 @@
+package Lab01;
 import java.util.*;
+
 
 public class Coordenada{
     private double x;
