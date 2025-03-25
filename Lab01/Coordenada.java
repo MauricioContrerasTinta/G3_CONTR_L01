@@ -37,13 +37,6 @@ public class Coordenada{
         return y;
     }
 
-    //Metodo distancia euclideana
-    double distancia(Coordenada c){
-        double dx = this.x - c.getX();
-        double dy = this.y - c.getY();
-        return sqrtAprox(dx * dx + dy * dy);
-    }
-
     public static double distancia(Coordenada c1, Coordenada c2){
         double dx = c1.getX() - c2.getX();
         double dy = c1.getY() - c2.getY();
