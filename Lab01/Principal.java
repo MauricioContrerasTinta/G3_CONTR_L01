@@ -28,11 +28,11 @@ public class Principal {
         mostrarRectangulo(B);
 
         if (Verificador.seSobreponen(A, B)) {
-            System.out.println("Rectangulos A y B se sobreponen.");
+            System.out.println("Los rectangulos se sobreponen.");
         } else if (Verificador.estanJuntos(A, B)) {
-            System.out.println("Rectangulos A y B se juntan.");
+            System.out.println("Los rectangulos estan juntos.");
         } else if (Verificador.sonDisjuntos(A, B)) {
-            System.out.println("Rectangulos A y B son disjuntos.");
+            System.out.println("Los rectangulos estan disjuntos.");
         }
 
         sc.close();
