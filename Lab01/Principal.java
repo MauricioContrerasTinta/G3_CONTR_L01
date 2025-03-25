@@ -44,4 +44,14 @@ public class Principal {
         System.out.println(r);
     }
 
+    public static Rectangulo rectanguloSobre(Rectangulo A, Rectangulo B) {
+         double x1 = Math.max(A.getEsquina1().getX(), B.getEsquina1().getX());
+         double y1 = Math.max(A.getEsquina1().getY(), B.getEsquina1().getY());
+         double x2 = Math.min(A.getEsquina2().getX(), B.getEsquina2().getX());
+         double y2 = Math.min(A.getEsquina2().getY(), B.getEsquina2().getY());
+ 
+         return new Rectangulo(new Coordenada(x1, y1), new Coordenada(x2, y2));
+ 
+     }
+
 }
