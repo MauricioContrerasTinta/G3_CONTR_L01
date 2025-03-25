@@ -29,8 +29,6 @@ public class Principal {
 
         if (Verificador.seSobreponen(A, B)) {
             System.out.println("Rectangulos A y B se sobreponen.");
-            Rectangulo areaSobreposicion = rectanguloSobre(A, B);
-            System.out.println("Area de sobreposicion = " + areaSobreposicion.calculoArea());
         } else if (Verificador.estanJuntos(A, B)) {
             System.out.println("Rectangulos A y B se juntan.");
         } else if (Verificador.sonDisjuntos(A, B)) {
